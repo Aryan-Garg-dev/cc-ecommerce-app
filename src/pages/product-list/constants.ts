@@ -1,0 +1,1 @@
+export const bannerText = "Hurry up and shop the best deals now !!!";
