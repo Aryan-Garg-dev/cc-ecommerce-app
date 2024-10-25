@@ -13,6 +13,7 @@ const useCategoryProducts = (category: string, sortByPrice: boolean = true)=>{
       setLoading(false);
     }).catch(error=>{
       console.log(error);
+      setLoading(false);
     })
   }, [url]);
   if (sortByPrice) products.sort((productA, productB)=>(productA.price - productB.price));

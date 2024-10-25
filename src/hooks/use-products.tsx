@@ -14,6 +14,7 @@ const useProducts = (limit?: number)=>{
       setLoading(false);
     }).catch(error=>{
       console.log(error);
+      setLoading(false);
     })
   }, [url]);
   return { products, loading };

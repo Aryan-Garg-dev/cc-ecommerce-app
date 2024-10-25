@@ -9,7 +9,7 @@ const Navbar = () => {
   const scrolled = useScrollTop(18);
   return (  
     <div className={cn("w-full fixed top-0 p-4 py-3 z-[99999] bg-gradient-to-r from-slate-300 via-stone-200 to-slate-300 flex justify-between", scrolled && "shadow-md" )}>
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center select-none">
           <img src={icons.logo} alt="Shop-Karo" className="size-8 mx-5"/>
           <div className="font-bebas text-4xl font-semibold text-slate-900">Shop Karo</div>
         </Link>
