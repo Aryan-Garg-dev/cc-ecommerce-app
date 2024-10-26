@@ -10,7 +10,7 @@ const ProductListLayout = ({
   return (  
     <div className="relative w-full h-full min-h-screen bg-slate-50">
       <Navbar />
-      <div className="w-full h-screen mt-16 z-0">
+      <div className="w-full h-screen mt-16 max-lg:mt-14 z-0">
         {children}
       </div>
     </div>

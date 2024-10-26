@@ -8,8 +8,8 @@ const ProductList = () => {
   return (  
     <div className="w-full h-full min-h-screen flex flex-col items-center bg-slate-50">
       <Banner textBeforeSpan={bannerText} className="bg-gradient-to-r from-slate-200 via-gray-100 to-slate-200 py-1.5 shadow-sm" />
-      <div className="w-full text-5xl font-[600] font-oswald px-10 py-2 text-slate-800">Discover Top Products</div>
-      <div className="w-full self-start text-2xl font-raleway max-w-screen-lg px-10 py-2 text-slate-800">Browse our diverse product range, easily sorted by category and price to make shopping convenient and personalized for you.</div>
+      <div className="w-full md:text-5xl text-4xl font-[600] font-oswald px-10 py-2 text-slate-800">Discover Top Products</div>
+      <div className="w-full self-start md:text-2xl text-lg font-raleway max-w-screen-lg px-10 py-2 text-slate-800">Browse our diverse product range, easily sorted by category and price to make shopping convenient and personalized for you.</div>
       <CategoryProducts 
         category={CATEGORY.mens} 
         containerClass="bg-gradient-to-b from-slate-50 to-blue-50"

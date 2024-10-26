@@ -19,7 +19,7 @@ const CategoryProducts = (props: CategoryProductsProps) => {
   const { products, loading } = useCategoryProducts(props.category);
   return (  
     <div className={`w-full px-20 pt-8 pb-10 ${props.containerClass}`}>
-      <div className={`text-5xl tracking-tight font-oswald font-medium capitalize mb-5 ${props.titleClass}`}>{props.category}</div>
+      <div className={`md:text-5xl text-4xl tracking-tight font-oswald font-medium capitalize mb-5 ${props.titleClass}`}>{props.category}</div>
       <Carousel className="w-full max-w-screen-2xl">
         <CarouselContent>  
           {loading && Array.from({ length: 6 }).map((_, index)=>(

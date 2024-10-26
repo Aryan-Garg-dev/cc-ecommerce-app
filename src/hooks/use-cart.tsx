@@ -31,7 +31,7 @@ const useCart = () => {
     if (index === -1) return 0;
     else return cart[index].quantity;
   }
-
+  
   const ctx = {
     data: cart, 
     add: addToCart, 

@@ -6,7 +6,7 @@ const BestSellers = () => {
   const { products, loading } = useProducts(12);
   return (  
     <div className="w-full min-w-screen bg-slate-200 shadow-lg py-4">
-      <div className="font-bebas text-6xl mr-16 text-gray-800 text-right">Our Bestsellers</div>
+      <div className="font-bebas md:text-6xl text-4xl md:mr-16 mr-5 text-gray-800 text-right">Our Bestsellers</div>
         <div className="relative">
           <Marquee pauseOnHover className="[--duration:20s]" reverse>
             {loading && Array(5).fill({}).map((_, index)=>(
