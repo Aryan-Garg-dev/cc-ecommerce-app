@@ -18,13 +18,11 @@ const ProductDetails = () => {
 
   const addToCart = (id: string)=>{
     cart.add(id);
-    console.log(cart.data);
     toast.success("item has been added to cart");
   }
-  console.log(cart.data);
   if (loading || !id) return <Loading />
   return (  
-    <div className="w-full h-full min-h-screen md:grid md:grid-cols-2 flex flex-col">
+    <div className="w-full h-full min-h-screen md:grid md:grid-cols-2 flex flex-col max-md:mb-10">
       <div className="bg-white flex justify-center items-center">
         <Lens zoomFactor={1.5} lensSize={192} hovering={hovering} setHovering={setHovering}>
           <img src={product?.image} className="size-96" />
@@ -45,7 +43,7 @@ const ProductDetails = () => {
           <div className="font-oswald text-xl">{product?.rating.count} ratings</div>
         </div>
         {cart.count(id) >= 1 && <AddAndDrop id={id} />}
-        <Button className="my-5 flex bg-slate-200 hover:bg-slate-300 text-black active:scale-95" onClick={()=>addToCart(id || "")}>
+        <Button className="my-5 flex bg-slate-200 hover:bg-slate-300 text-black active:scale-95 select-none" onClick={()=>addToCart(id || "")}>
           <div>Add to Cart</div>
           <BsCartPlus />
         </Button>

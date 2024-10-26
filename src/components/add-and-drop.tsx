@@ -11,7 +11,6 @@ const AddAndDrop = ({
 
   const addToCart = (id: string)=>{
     cart.add(id);
-    console.log(cart.data);
     toast.success("item has been added to cart");
   }
 
