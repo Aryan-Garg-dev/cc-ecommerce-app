@@ -11,8 +11,9 @@ export type Product = {
   }
 }
 
-export type OrderedProduct = Product & {
-  quantity: number
+export type OrderedProduct = {
+  id: string,
+  quantity: number,
 }
 
 export enum CATEGORY {
