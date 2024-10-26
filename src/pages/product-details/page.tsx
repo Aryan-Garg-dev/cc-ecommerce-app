@@ -28,8 +28,8 @@ const ProductDetails = () => {
           <img src={product?.image} className="size-96 max-md:size-72" />
         </Lens>
       </div>
-      <div className="flex flex-col items-center justify-center gap-5 max-md:gap-3 lg:px-24 px-12 bg-slate-50 h-full">
-        <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col items-center justify-center max-md:justify-start gap-5 max-md:gap-3 lg:px-24 px-12 bg-slate-50 h-full">
+        <div className="flex flex-col justify-center items-center max-md:justify-start max-md:mt-5">
           <div className="font-montserrat font-bold text-3xl max-md:text-2xl text-center">{product?.title}</div>
           <div className="font-montserrat text-neutral-600 text-lg max-md:text-base">{product?.category}</div>
           <p className="font-open_sans text-center text-xl max-md:text-base max-md:text-balance max-md:text-justify">{product?.description}</p>
