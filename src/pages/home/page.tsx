@@ -3,7 +3,7 @@
 import HeroSection from "./sections/hero";
 import Trending from "./sections/trending";
 import BestSellers from "./sections/bestsellers";
-import Footer from "../../components/footer";
+import Footer from "@/components/footer";
 import LinkRoute from "./components/LinkRoute";
 
 const HomePage = () => {

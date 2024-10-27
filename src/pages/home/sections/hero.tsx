@@ -1,6 +1,6 @@
 import { Cover } from "@/components/ui/cover";
 import { bannerText, heroDescription } from "../constant";
-import Banner from "../../../components/banner";
+import Banner from "@/components/banner";
 import TypingAnimation from "@/components/ui/typing-animation";
 
 export default function HeroSection(){

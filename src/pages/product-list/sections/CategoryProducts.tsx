@@ -23,7 +23,7 @@ const CategoryProducts = (props: CategoryProductsProps) => {
       <Carousel className="w-full max-w-screen-2xl">
         <CarouselContent>  
           {loading && Array.from({ length: 6 }).map((_, index)=>(
-            <CarouselItem key={index} className="basis-1/4 w-fit"><ProductCardSkeleton className={props.className} /></CarouselItem>
+            <CarouselItem key={index} className="lg:basis-1/4 md:basis-1/3 sm:basis-1/2 w-fit"><ProductCardSkeleton className={props.className} /></CarouselItem>
           ))}
           {!loading && products.map((product, index)=>(
             <CarouselItem key={index} className="w-fit lg:basis-1/4 md:basis-1/3 sm:basis-1/2">

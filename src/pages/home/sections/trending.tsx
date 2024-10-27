@@ -1,6 +1,6 @@
 import Marquee from "@/components/ui/marquee";
 import useProducts from "@/hooks/use-products";
-import ProductCard, { ProductCardSkeleton } from "../../../components/product-card";
+import ProductCard, { ProductCardSkeleton } from "@/components/product-card";
 
 const Trending = () => {
   const { products, loading } = useProducts(6);
